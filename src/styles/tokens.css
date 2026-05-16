@@ -1,0 +1,195 @@
+/* ─────────────────────────────────────────────────────────────
+   THAWABET AL INSHAA · ثوابت الإنشاء
+   Design system tokens — colors, type, spacing, motion, surfaces
+   v1.0 · May 2026
+   ───────────────────────────────────────────────────────────── */
+
+/* ── Fonts ── */
+@font-face { font-family: 'TheYearofHandicrafts'; font-weight: 400; font-style: normal; src: url('/fonts/TheYearofHandicrafts-Regular.otf') format('opentype'); font-display: block; }
+@font-face { font-family: 'TheYearofHandicrafts'; font-weight: 500; font-style: normal; src: url('/fonts/TheYearofHandicrafts-Medium.otf') format('opentype'); font-display: block; }
+@font-face { font-family: 'TheYearofHandicrafts'; font-weight: 600; font-style: normal; src: url('/fonts/TheYearofHandicrafts-SemiBold.otf') format('opentype'); font-display: block; }
+@font-face { font-family: 'TheYearofHandicrafts'; font-weight: 700; font-style: normal; src: url('/fonts/TheYearofHandicrafts-Bold.otf') format('opentype'); font-display: block; }
+@font-face { font-family: 'TheYearofHandicrafts'; font-weight: 900; font-style: normal; src: url('/fonts/TheYearofHandicrafts-Black.otf') format('opentype'); font-display: block; }
+
+@font-face { font-family: 'Effra'; font-weight: 300; font-style: normal; src: url('/fonts/Effra-Light.otf') format('opentype'); font-display: block; }
+@font-face { font-family: 'Effra'; font-weight: 400; font-style: normal; src: url('/fonts/Effra-Regular.otf') format('opentype'); font-display: block; }
+@font-face { font-family: 'Effra'; font-weight: 500; font-style: normal; src: url('/fonts/Effra-Medium.otf') format('opentype'); font-display: block; }
+@font-face { font-family: 'Effra'; font-weight: 700; font-style: normal; src: url('/fonts/Effra-Bold.otf') format('opentype'); font-display: block; }
+@font-face { font-family: 'Effra'; font-weight: 800; font-style: normal; src: url('/fonts/Effra-Heavy.otf') format('opentype'); font-display: block; }
+@font-face { font-family: 'Effra'; font-weight: 300; font-style: italic; src: url('/fonts/Effra-LightItalic.otf') format('opentype'); font-display: block; }
+@font-face { font-family: 'Effra'; font-weight: 400; font-style: italic; src: url('/fonts/Effra-Italic.otf') format('opentype'); font-display: block; }
+@font-face { font-family: 'Effra'; font-weight: 500; font-style: italic; src: url('/fonts/Effra-MediumItalic.otf') format('opentype'); font-display: block; }
+@font-face { font-family: 'Effra'; font-weight: 700; font-style: italic; src: url('/fonts/Effra-BoldItalic.otf') format('opentype'); font-display: block; }
+@font-face { font-family: 'Effra'; font-weight: 800; font-style: italic; src: url('/fonts/Effra-HeavyItalic.otf') format('opentype'); font-display: block; }
+
+:root {
+  /* ── Brand colors ── */
+  --thw-orange:        #D96C1F;   /* Primary · Burnt Orange · 60% */
+  --thw-orange-soft:   #E88B47;
+  --thw-orange-deep:   #B5571A;
+  --thw-orange-glow:   rgba(217,108,31,0.18);
+
+  --thw-ink:           #111111;   /* Charcoal · Secondary 30% */
+  --thw-black:         #0A0A0A;   /* Deepest field */
+  --thw-bg:            #0E0E0E;   /* Page background */
+
+  --thw-surface-1:     #161616;   /* Card background */
+  --thw-surface-2:     #1C1C1C;   /* Elevated card */
+  --thw-surface-3:     #262626;   /* Hover / selected */
+
+  --thw-line:          #2C2C2C;   /* Hairline divider */
+  --thw-line-strong:   #3A3A3A;   /* Stronger divider */
+
+  --thw-gray:          #BFBFBF;   /* Light Gray · Neutral 8% */
+  --thw-gray-2:        #8A8A8A;
+  --thw-gray-3:        #5A5A5A;
+  --thw-white:         #FFFFFF;   /* Light · Neutral 2% */
+
+  /* ── Semantic ── */
+  --fg:                var(--thw-white);
+  --fg-1:              var(--thw-white);
+  --fg-2:              var(--thw-gray);
+  --fg-3:              var(--thw-gray-2);
+  --fg-mute:           var(--thw-gray-3);
+  --fg-accent:         var(--thw-orange);
+  --bg:                var(--thw-bg);
+  --bg-elev:           var(--thw-surface-1);
+  --bg-elev-2:         var(--thw-surface-2);
+  --border:            var(--thw-line);
+  --border-strong:     var(--thw-line-strong);
+
+  /* ── Type families ── */
+  --font-display:      'TheYearofHandicrafts', 'Tajawal', system-ui, sans-serif;  /* Arabic display + Arabic body */
+  --font-body:         'TheYearofHandicrafts', 'Tajawal', system-ui, sans-serif;
+  --font-latin:        'Effra', 'Inter', system-ui, sans-serif;                   /* Latin / English / metadata */
+  --font-mono:         'JetBrains Mono', ui-monospace, Menlo, monospace;
+
+  /* ── Type scale (px) ── */
+  --fs-eyebrow:        10px;     /* labels, tags */
+  --fs-meta:           11px;     /* metadata */
+  --fs-caption:        12px;
+  --fs-small:          14px;
+  --fs-body:           15px;
+  --fs-lead:           18px;
+  --fs-h6:             18px;
+  --fs-h5:             22px;
+  --fs-h4:             28px;
+  --fs-h3:             36px;
+  --fs-h2:             48px;
+  --fs-h1:             72px;
+  --fs-display:        112px;
+
+  /* ── Letter-spacing ── */
+  --tracking-eyebrow:  0.32em;     /* uppercase Latin labels */
+  --tracking-meta:     0.28em;
+  --tracking-loose:    0.18em;
+  --tracking-arabic:   0.02em;
+
+  /* ── Line heights ── */
+  --lh-tight:          1.05;
+  --lh-snug:           1.25;
+  --lh-base:           1.7;
+  --lh-arabic:         1.85;
+
+  /* ── Spacing (4-base, 8-step) ── */
+  --space-1:           4px;
+  --space-2:           8px;
+  --space-3:           12px;
+  --space-4:           16px;
+  --space-5:           20px;
+  --space-6:           24px;
+  --space-8:           32px;
+  --space-10:          40px;
+  --space-12:          48px;
+  --space-16:          64px;
+  --space-20:          80px;
+  --space-24:          96px;
+  --space-32:          128px;
+
+  /* ── Radii — restrained, architectural ── */
+  --radius-xs:         2px;
+  --radius-sm:         4px;
+  --radius-md:         6px;
+  --radius-lg:         10px;
+  --radius-pill:       999px;
+
+  /* ── Borders ── */
+  --border-hairline:   1px solid var(--thw-line);
+  --border-default:    1px solid var(--thw-line-strong);
+  --border-accent:     1.5px solid var(--thw-orange);
+
+  /* ── Shadows / elevation ── */
+  --shadow-sm:         0 1px 2px rgba(0,0,0,0.4);
+  --shadow-md:         0 8px 24px rgba(0,0,0,0.45);
+  --shadow-lg:         0 24px 60px rgba(0,0,0,0.55);
+  --shadow-glow:       0 0 0 1px rgba(217,108,31,0.25), 0 12px 40px rgba(217,108,31,0.18);
+
+  /* ── Motion ── */
+  --ease-out:          cubic-bezier(0.22, 1, 0.36, 1);
+  --ease-in-out:       cubic-bezier(0.65, 0, 0.35, 1);
+  --ease-architect:    cubic-bezier(0.16, 1, 0.3, 1);
+  --dur-fast:          160ms;
+  --dur-base:          280ms;
+  --dur-slow:          560ms;
+  --dur-cinematic:     1200ms;
+
+  /* ── Layout ── */
+  --container:         1480px;
+  --gutter:            80px;
+  --grid-gap:          24px;
+}
+
+/* ── Base ── */
+html, body { background: var(--bg); color: var(--fg); }
+body {
+  font-family: var(--font-body);
+  font-size: var(--fs-body);
+  line-height: var(--lh-arabic);
+  letter-spacing: var(--tracking-arabic);
+  direction: rtl;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+/* ── Semantic type ── */
+.thw-display {
+  font-family: var(--font-display);
+  font-weight: 900;
+  font-size: var(--fs-display);
+  line-height: var(--lh-tight);
+  letter-spacing: var(--tracking-arabic);
+  color: var(--fg-1);
+}
+.thw-h1 { font-family: var(--font-display); font-weight: 900; font-size: var(--fs-h1); line-height: 1.05; letter-spacing: var(--tracking-arabic); }
+.thw-h2 { font-family: var(--font-display); font-weight: 800; font-size: var(--fs-h2); line-height: 1.1;  letter-spacing: var(--tracking-arabic); }
+.thw-h3 { font-family: var(--font-display); font-weight: 800; font-size: var(--fs-h3); line-height: 1.2;  letter-spacing: var(--tracking-arabic); }
+.thw-h4 { font-family: var(--font-display); font-weight: 700; font-size: var(--fs-h4); line-height: 1.3;  letter-spacing: var(--tracking-arabic); }
+.thw-h5 { font-family: var(--font-display); font-weight: 700; font-size: var(--fs-h5); line-height: 1.35; }
+.thw-h6 { font-family: var(--font-display); font-weight: 600; font-size: var(--fs-h6); line-height: 1.4;  }
+
+.thw-lead   { font-family: var(--font-body); font-size: var(--fs-lead); line-height: var(--lh-base); color: var(--fg-2); }
+.thw-body   { font-family: var(--font-body); font-size: var(--fs-body); line-height: var(--lh-arabic); color: var(--fg-2); }
+.thw-small  { font-family: var(--font-body); font-size: var(--fs-small); line-height: var(--lh-base); color: var(--fg-3); }
+.thw-caption{ font-family: var(--font-latin); font-size: var(--fs-caption); color: var(--fg-3); }
+
+/* English / Latin labels — Effra, uppercased, tracked */
+.thw-eyebrow {
+  font-family: var(--font-latin);
+  font-weight: 700;
+  font-size: var(--fs-eyebrow);
+  letter-spacing: var(--tracking-eyebrow);
+  text-transform: uppercase;
+  color: var(--fg-accent);
+  direction: ltr;
+}
+.thw-meta {
+  font-family: var(--font-latin);
+  font-weight: 600;
+  font-size: var(--fs-meta);
+  letter-spacing: var(--tracking-meta);
+  text-transform: uppercase;
+  color: var(--fg-mute);
+  direction: ltr;
+}
+.thw-en { font-family: var(--font-latin); direction: ltr; }
+
