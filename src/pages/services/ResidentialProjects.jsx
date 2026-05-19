@@ -27,9 +27,11 @@ function ResidentialHero() {
           </div>
         </Reveal>
         <Reveal as="h1" delay={2} className="hero-headline">
-          بيتك يستحق واجهةً <span className="accent">تليق بقيمته</span> — وأمانًا لا يُساوَم.
+
+          بيتك يستحق واجهةً <span className="accent test6">تليق بقيمته</span> <span className='test5'> وأمانًا لا يُساوَم. </span>
+
         </Reveal>
-        <Reveal as="p" delay={3} className="hero-subline">
+        <Reveal as="p" delay={3} className="hero-subline ">
           أبواب ألمنيوم فاخرة، نوافذ عازلة للصوت والحرارة، وأبواب أمان مقاومة للاقتحام — لفلل الرياض وجدة والخبر. نُقدّم المعاينة المجانية، ونلتزم بالمواصفات المتفق عليها.
         </Reveal>
         <Reveal delay={4} className="hero-actions">
@@ -37,8 +39,8 @@ function ResidentialHero() {
             <span>احصل على معاينة مجانية لمنزلك</span>
             <Icon.ArrowLeft className="arrow" width="8" height="8" />
           </a>
-          <a className="btn btn-outline btn-lg" href="#products">
-            <span>تصفّح منتجاتنا السكنية</span>
+          <a className="btn btn-outline btn-lg discoverbtn" href="#products">
+            تصفّح منتجاتنا السكنية
             <Icon.ArrowDown width="16" height="16" />
           </a>
         </Reveal>
@@ -270,11 +272,11 @@ function InspectionForm() {
                 <span>نوع المشروع</span>
                 <select name="type" required defaultValue="">
                   <option value="" disabled>اختر نوع المشروع</option>
-                  <option>فيلا سكنية جديدة</option>
-                  <option>استبدال نوافذ وأبواب قائمة</option>
-                  <option>إضافة واجهة زجاجية</option>
-                  <option>مشروع مجمع فلل</option>
-                  <option>غير ذلك</option>
+                  <option className='leadFormSelection' >فيلا سكنية جديدة</option>
+                  <option className='leadFormSelection' >استبدال نوافذ وأبواب قائمة</option>
+                  <option className='leadFormSelection' >إضافة واجهة زجاجية</option>
+                  <option className='leadFormSelection' >مشروع مجمع فلل</option>
+                  <option className='leadFormSelection' >غير ذلك</option>
                 </select>
               </label>
               <button className="btn btn-primary btn-lg lf-submit" type="submit">
