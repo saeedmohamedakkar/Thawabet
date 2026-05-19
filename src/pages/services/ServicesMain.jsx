@@ -31,7 +31,7 @@ function ServicesHero() {
         <Reveal as="h1" delay={2} className="hero-headline">
           مشاريعك المعمارية الكبرى تحتاج إلى <span className="accent">دقة تنفيذية.</span>
         </Reveal>
-        <Reveal as="p" delay={3} className="hero-subline">
+        <Reveal as="p" delay={3} className="hero-subline test3">
           من الواجهات الزجاجية العملاقة إلى أنظمة الأمان المصفحة؛ ندمج بين التصميم الجمالي والامتثال الصارم لكود البناء السعودي ومعايير الدفاع المدني. لضمان تسليم مشروعك بالمواصفات المطلوبة، وفي الوقت المحدد.
         </Reveal>
         <Reveal delay={4} className="hero-actions">
@@ -39,9 +39,9 @@ function ServicesHero() {
             <span>تحدث مع الإدارة الهندسية الآن</span>
             <Icon.ArrowLeft className="arrow" width="8" height="8" />
           </Link>
-          <a className="btn btn-outline btn-lg" href="#sectors">
+          <a className="btn btn-outline btn-lg discoverbtn" href="#sectors">
             <span>استكشف قطاعات حلولنا</span>
-            <Icon.ArrowDown width="16" height="16" />
+            <Icon.ArrowDown  width="10" height="10" />
           </a>
         </Reveal>
       </div>
@@ -128,12 +128,12 @@ function SectorsNav() {
             <Reveal key={s.num} as={Link} to={s.href} delay={i + 1} className="sector-card">
               <div className="sector-num">{s.num}</div>
               <div className="sector-ico"><s.Ico width="24" height="24" /></div>
-              <h3 className="sector-title">{s.ar}</h3>
+              <h3 className="sector-title ">{s.ar}</h3>
               <span className="sector-en">{s.en}</span>
-              <p className="sector-desc">{s.desc}</p>
-              <div className="sector-foot">
-                <span className="sector-tag">{s.tag}</span>
-                <span className="sector-arrow"><Icon.ArrowLeft width="16" height="16" /></span>
+              <p className="sector-desc ">{s.desc}</p>
+              <div className="sector-foot ">
+                <span className="sector-tag ">{s.tag}</span>
+                <span className="sector-arrow "><Icon.ArrowLeft  width="16" height="16" /></span>
               </div>
             </Reveal>
           ))}
@@ -170,7 +170,7 @@ function WhyThawabet() {
       <div className="container">
         <Reveal className="section-header">
           <div className="section-eyebrow"><span className="line"></span><span>Why Thawabet · لماذا ثوابت</span></div>
-          <h2 className="section-h2">لماذا تفضّل المكاتب الاستشارية <span className="accent">إسناد مشاريعها لـ ثوابت؟</span></h2>
+          <h2 className="section-h2">لماذا تفضّل المكاتب الاستشارية <span className="accent test3">إسناد مشاريعها لـ ثوابت؟</span></h2>
           <p className="section-lead">لأن الشريك الهندسي الصحيح لا يُنجز المشروع فقط — يحمي سمعتك أمام العميل النهائي.</p>
         </Reveal>
         <div className="why-grid">

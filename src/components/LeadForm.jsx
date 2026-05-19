@@ -64,9 +64,9 @@ export default function LeadForm({
               </label>
               <label className="lf-field">
                 <span>نوع الخدمة المطلوبة</span>
-                <select name="service" required defaultValue="">
+                <select  name="service" required defaultValue="">
                   <option value="" disabled>اختر الخدمة</option>
-                  {serviceOptions.map((o) => <option key={o}>{o}</option>)}
+                  {serviceOptions.map((o) => <option className='leadFormSelection'  key={o}>{o}</option>)}
                 </select>
               </label>
               <button className="btn btn-primary btn-lg lf-submit" type="submit">

@@ -145,7 +145,7 @@ function Services() {
         <div className="services-head">
           <div className="lh">
             <div className="section-eyebrow"><span className="line"></span><span>منتجاتنا</span></div>
-            <h2 className="section-h2">بنية تحتية ماديّة <span className="accent">توافق أدقّ المعايير الرقابية</span>.</h2>
+            <h2 className="section-h2">بنية تحتية ماديّة <span className="accent test3">توافق أدقّ المعايير الرقابية</span>.</h2>
           </div>
           <div className="services-meta">
             <div className="meta-row"><span>Products</span><span></span></div>

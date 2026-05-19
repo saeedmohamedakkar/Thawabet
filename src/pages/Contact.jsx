@@ -25,10 +25,10 @@ function ContactHero() {
             <span>Contact Us · تواصل معنا</span>
           </div>
         </Reveal>
-        <Reveal as="h1" delay={2} className="hero-headline">
-          دعنا نحول مخططاتك إلى واقع.. <span className="accent">بدون تأخير أو تجاوز للميزانية.</span>
+        <Reveal as="h1" delay={2} className="hero-headline ">
+          دعنا نحول مخططاتك إلى واقع.. <span className="accent test5">بدون تأخير أو تجاوز للميزانية.</span>
         </Reveal>
-        <Reveal as="p" delay={3} className="hero-subline">
+        <Reveal as="p" delay={3} className="hero-subline ">
           سواء كنت تبحث عن تسعير دقيق لجدول الكميات (BOQ)، أو تحتاج استشارة فنية حول مطابقة واجهاتك واشتراطات الدفاع المدني، فريقنا الهندسي جاهز.
         </Reveal>
       </div>
@@ -106,13 +106,13 @@ function ContactForm() {
                 <span>نوع المشروع</span>
                 <select name="project_type" defaultValue="" required>
                   <option value="" disabled>اختر نوع المشروع</option>
-                  <option>مبنى تجاري متعدد الاستخدامات</option>
-                  <option>مجمع مصرفي أو مالي</option>
-                  <option>مشروع سكني فاخر</option>
-                  <option>مبنى حكومي أو مؤسسي</option>
-                  <option>مشروع صناعي أو لوجستي</option>
-                  <option>تجديد وإعادة تأهيل</option>
-                  <option>غير ذلك</option>
+                  <option className='leadFormSelection' >مبنى تجاري متعدد الاستخدامات</option>
+                  <option className='leadFormSelection' >مجمع مصرفي أو مالي</option>
+                  <option className='leadFormSelection' >مشروع سكني فاخر</option>
+                  <option className='leadFormSelection' >مبنى حكومي أو مؤسسي</option>
+                  <option className='leadFormSelection' >مشروع صناعي أو لوجستي</option>
+                  <option className='leadFormSelection' >تجديد وإعادة تأهيل</option>
+                  <option className='leadFormSelection' >غير ذلك</option>
                 </select>
               </label>
               <label className="lf-field">

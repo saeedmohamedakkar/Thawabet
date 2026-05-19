@@ -194,7 +194,7 @@ function ProjectGallery() {
       <div className="container">
         <Reveal className="section-header">
           <div className="section-eyebrow"><span className="line"></span><span>Gallery · المعرض</span></div>
-          <h2 className="section-h2">بصمتنا الهندسية <span className="accent">في كل زاوية..</span></h2>
+          <h2 className="section-h2">بصمتنا الهندسية <span className="accent test3">في كل زاوية..</span></h2>
           <p className="section-lead">من المعبيلة الصناعية إلى العامرات — مشاريع تعكس جودة التنفيذ وعمق الخبرة الإقليمية.</p>
         </Reveal>
 
@@ -315,12 +315,12 @@ function ProjectsForm() {
                 <span>نوع المشروع</span>
                 <select name="type" defaultValue="" required>
                   <option value="" disabled>اختر نوع المشروع</option>
-                  <option>مبنى تجاري متعدد الاستخدامات</option>
-                  <option>مجمع مصرفي أو إداري</option>
-                  <option>مشروع سكني فاخر</option>
-                  <option>مبنى حكومي أو مؤسسي</option>
-                  <option>مشروع صناعي أو لوجستي</option>
-                  <option>غير ذلك</option>
+                  <option className='leadFormSelection'>مبنى تجاري متعدد الاستخدامات</option>
+                  <option className='leadFormSelection'>مجمع مصرفي أو إداري</option>
+                  <option className='leadFormSelection'>مشروع سكني فاخر</option>
+                  <option className='leadFormSelection'>مبنى حكومي أو مؤسسي</option>
+                  <option className='leadFormSelection'>مشروع صناعي أو لوجستي</option>
+                  <option className='leadFormSelection'>غير ذلك</option>
                 </select>
               </label>
               <label className="lf-field">

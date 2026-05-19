@@ -140,7 +140,7 @@ function OperationalCapability() {
       <div className="container">
         <Reveal className="section-header">
           <div className="section-eyebrow"><span className="line"></span><span>Structure · الهيكل التنظيمي</span></div>
-          <h2 className="section-h2">هيكل إداري مصمم <span className="accent">لضمان التسليم في الموعد.</span></h2>
+          <h2 className="section-h2">هيكل إداري مصمم <span className="accent test3">لضمان التسليم في الموعد.</span></h2>
           <p className="section-lead">ثلاثة محاور تشغيلية تعمل بتناسق لضمان أن كل مشروع يُسلَّم في موعده وبالمواصفة المتفق عليها — دون استثناء.</p>
         </Reveal>
         <div className="why-grid">
