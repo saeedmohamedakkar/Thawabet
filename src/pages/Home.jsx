@@ -16,7 +16,7 @@ function Hero() {
   return (
     <section className="hero" id="home">
       <video ref={videoRef}  className="hero-video" autoPlay muted loop playsInline preload="auto">
-        <source src="/assets/hero-bg.mp4" type="video/mp4" />
+        <source src="/assets/hero-bg-no-logo.mp4" type="video/mp4" />
       </video>
       <div className="hero-overlay"></div>
       <div className="hero-grid"></div>

@@ -523,7 +523,7 @@ a {
   display: flex;
   align-items: center;
   gap: 14px;
-  font-family: var(--font-latin);
+  /* font-family: var(--font-latin); */
   font-weight: 700;
   font-size: clamp(9.5px, 0.85vw, 10.5px);
   color: var(--thw-gray);
