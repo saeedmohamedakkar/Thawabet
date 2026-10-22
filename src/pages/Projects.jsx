@@ -9,8 +9,8 @@ function ProjectsHero() {
       <div className="hero-grid"></div>
       <div className="page-hero-glow"></div>
 
-      <div className="hero-rail left"><span className="tick"></span><span>PORTFOLIO · CASE STUDIES</span></div>
-      <div className="hero-rail right"><span>OMAN · SAUDI ARABIA</span><span className="tick"></span></div>
+      <div className="hero-rail left"><span className="tick"></span><span>معرض الأعمال · دراسات الحالة</span></div>
+      <div className="hero-rail right"><span>عمان · المملكة العربية السعودية</span><span className="tick"></span></div>
 
       <div className="hero-top">
         <div className="hero-eyebrow">
@@ -23,7 +23,7 @@ function ProjectsHero() {
         <Reveal delay={1}>
           <div className="page-hero-pre">
             <span className="line"></span>
-            <span>سجل التنفيذ · Portfolio</span>
+            <span>سجل التنفيذ </span>
           </div>
         </Reveal>
         <Reveal as="h1" delay={2} className="hero-headline">
@@ -122,7 +122,7 @@ function CaseStudies() {
     <section className="page-section alt" id="case-studies">
       <div className="container">
         <Reveal className="section-header">
-          <div className="section-eyebrow"><span className="line"></span><span>Case Studies · دراسات الحالة</span></div>
+          <div className="section-eyebrow"><span className="line"></span><span> دراسات الحالة</span></div>
           <h2 className="section-h2">مشاريع <span className="accent">تحدٍّ وحلول وأرقام حقيقية.</span></h2>
           <p className="section-lead">لكل مشروع قصة تحدٍّ وحل مدروس ونتيجة موثّقة — لأن الأرقام تتحدث عن نفسها.</p>
         </Reveal>
@@ -149,15 +149,15 @@ function CaseStudies() {
 
               <div className="cs-phases">
                 <div className="cs-phase">
-                  <span className="cs-phase-label challenge">التحدي · Challenge</span>
+                  <span className="cs-phase-label challenge">التحدي </span>
                   <p className="cs-phase-text">{c.challenge}</p>
                 </div>
                 <div className="cs-phase">
-                  <span className="cs-phase-label solution">الحل · Solution</span>
+                  <span className="cs-phase-label solution">الحل </span>
                   <p className="cs-phase-text">{c.solution}</p>
                 </div>
                 <div className="cs-phase">
-                  <span className="cs-phase-label result">النتيجة · Result</span>
+                  <span className="cs-phase-label result">النتيجة </span>
                   <p className="cs-phase-text">{c.result}</p>
                 </div>
               </div>
@@ -181,19 +181,21 @@ function CaseStudies() {
 /* ─── Project Gallery ─── */
 function ProjectGallery() {
   const areas = [
-    { no: '01', title: 'المعبيلة', sub: 'المنطقة الصناعية · مسقط', year: '2023', featured: true },
-    { no: '02', title: 'العذيبة', sub: 'مسقط · سلطنة عُمان', year: '2024' },
-    { no: '03', title: 'الخوض', sub: 'مسقط · سلطنة عُمان', year: '2023' },
-    { no: '04', title: 'السيب', sub: 'مسقط · سلطنة عُمان', year: '2024' },
-    { no: '05', title: 'العامرات', sub: 'مسقط · سلطنة عُمان', year: '2025' },
-    { no: '06', title: 'الأنصب', sub: 'سلطنة عُمان', year: '2024' },
+    { no: '01', title: 'فرع الراجحي (المعبيلة)', sub: 'المنطقة الصناعية · مسقط', year: '2023', featured: true, description: 'مشروع فرع الراجحي بالمعبيلة، بتصميم وتنفيذ يجمع بين الجودة الهندسية والهوية المعمارية العصرية، مع الاهتمام بأدق التفاصيل لتحقيق بيئة مصرفية آمنة وعملية' },
+    { no: '02', title: 'مقر البلاد المؤسسي (بوشر)', sub: 'مسقط · سلطنة عُمان', year: '2024', description: "مشروع المقر المؤسسي لبنك البلاد في بوشر، يجمع بين التصميم المعماري العصري والتنفيذ المتقن، بما يعكس الهوية المؤسسية ويوفر بيئة عمل احترافية تلبي متطلبات الكفاءة والجودة" },
+    { no: '03', title: 'مركز SNB التشغيلي (الخوض)', sub: 'مسقط · سلطنة عُمان', year: '2023', description: "مشروع مركز SNB التشغيلي بالخوض، يجمع بين الكفاءة الهندسية ودقة التنفيذ، مع حلول متكاملة تلبي متطلبات التشغيل وتضمن أعلى مستويات الجودة والموثوقية" },
+    { no: '04', title: 'مبنى ZATCA الإقليمي (العذبيهة)', sub: 'مسقط · سلطنة عُمان', year: '2024', description: "مشروع مبنى ZATCA الإقليمي بالعذبيهة، يجمع بين التصميم المعماري الحديث وجودة التنفيذ، مع مراعاة متطلبات الكفاءة التشغيلية وتوفير بيئة عمل متكاملة تلبي المعايير المؤسسية." },
+
+
+    // { no: '05', title: 'العامرات', sub: 'مسقط · سلطنة عُمان', year: '2025' },
+    // { no: '06', title: 'الأنصب', sub: 'سلطنة عُمان', year: '2024' },
   ]
 
   return (
     <section className="page-section">
       <div className="container">
         <Reveal className="section-header">
-          <div className="section-eyebrow"><span className="line"></span><span>Gallery · المعرض</span></div>
+          <div className="section-eyebrow"><span className="line"></span><span>المعرض</span></div>
           <h2 className="section-h2">بصمتنا الهندسية <span className="accent test3">في كل زاوية..</span></h2>
           <p className="section-lead">من المعبيلة الصناعية إلى العامرات — مشاريع تعكس جودة التنفيذ وعمق الخبرة الإقليمية.</p>
         </Reveal>
@@ -205,6 +207,7 @@ function ProjectGallery() {
               <div className="gallery-overlay">
                 <div className="gallery-title">{a.title}</div>
                 <span className="gallery-sub">{a.sub} · {a.year}</span>
+                <span className="gallery-sub">  {a.description}</span>
               </div>
             </Reveal>
           ))}

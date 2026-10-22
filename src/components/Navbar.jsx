@@ -20,7 +20,7 @@ export default function Navbar() {
 
   const links = [
     { id: 'home',     ar: 'الرئيسية',   href: '/' },
-    { id: 'products', ar: 'منتجاتنا',   href: '/products' },
+    { id: 'products', ar: 'منتجاتنا',   href: '/OurProducts' },
     { id: 'services', ar: 'الخدمات',    href: '/services' },
     { id: 'projects', ar: 'المشاريع',   href: '/projects' },
     { id: 'about',    ar: 'عن الشركة',  href: '/about' },

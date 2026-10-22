@@ -10,6 +10,7 @@ import ResidentialProjects from './pages/services/ResidentialProjects'
 import Projects from './pages/Projects'
 import About from './pages/About'
 import Contact from './pages/Contact'
+import OurProducts from './pages/OurProducts'
 
 /* Scroll to top on route change */
 function ScrollReset() {
@@ -32,6 +33,7 @@ export default function App() {
         <Route path="/projects" element={<Projects />} />
         <Route path="/about" element={<About />} />
         <Route path="/contact" element={<Contact />} />
+        <Route path="/OurProducts" element={<OurProducts />} />
       </Routes>
       <Footer />
     </>

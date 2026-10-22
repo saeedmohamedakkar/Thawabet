@@ -47,7 +47,7 @@ function Hero() {
           </a>
           <a className="btn btn-outline btn-lg" href="https://wa.me/966110000000">
             <span>تواصل معنا</span>
-            <Icon.ArrowUpRight width="8" height="8" />
+            <Icon.ArrowLeft width="8" height="8" />
           </a>
         </div>
       </div>
@@ -224,7 +224,7 @@ function Projects() {
               </div>
               <a className="btn btn-outline" href="#">
                 <span>دراسة الحالة</span>
-                <Icon.ArrowUpRight width="16" height="16" />
+                <Icon.ArrowLeft width="16" height="16" />
               </a>
             </div>
           </div>
@@ -268,7 +268,7 @@ function Process() {
               <div className="step-body">
                 <div className="step-head">
                   <span className="step-n">{s.n}</span>
-                  <span className="step-en">{s.en}</span>
+                  {/* <span className="step-en">{s.en}</span> */}
                 </div>
                 <h3 className="step-h">{s.ar}</h3>
                 <p>{s.desc}</p>
