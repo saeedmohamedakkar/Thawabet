@@ -2013,6 +2013,7 @@ a {
 
 /* ─── Reveals ─── */
 .reveal {
+
   opacity: 0;
   transform: translateY(24px);
   transition: opacity 1s var(--ease-architect), transform 1s var(--ease-architect);
